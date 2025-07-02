@@ -9,7 +9,7 @@ import asyncio
 TOKEN = "token"
 CHAT_ID = 1497603032
 
-app = Flask(name)
+app = Flask(__name__)
 
 
 aiogram_loop = asyncio.new_event_loop()
@@ -34,7 +34,7 @@ async def main():
 
     await dp.start_polling(bot)
 
-if name == 'main':
+if __name__ == '__main__':
 
     flask_thread = threading.Thread(target=run_flask)
     flask_thread.start()

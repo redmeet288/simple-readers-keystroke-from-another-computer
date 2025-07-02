@@ -6,7 +6,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 import threading
 import asyncio
 
-TOKEN = "token"
+TOKEN = "6904720328:AAHdFOlcIoO1r_AaF9JtU0bONBs0Yn3NiZM"
 CHAT_ID = 1497603032
 
 app = Flask(__name__)

